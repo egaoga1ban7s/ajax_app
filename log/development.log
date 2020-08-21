@@ -1,0 +1,230 @@
+  [1m[35m (5.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE DATABASE `first_app_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `first_app_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+Started GET "/" for ::1 at 2020-07-27 15:29:59 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nakaoshinnosuke/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nakaoshinnosuke/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.4ms | Allocations: 482)
+Completed 200 OK in 14ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 2821)
+
+
+Started GET "/posts" for ::1 at 2020-07-27 17:06:43 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 218)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nakaoshinnosuke/projects/first_app/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.0
+Time: 1232ms
+Built at: 2020/07/27 17:06:47
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3355ms (Views: 3350.4ms | ActiveRecord: 0.0ms | Allocations: 1401786)
+
+
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (18.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) COLLATE utf8_general_ci NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) COLLATE utf8_general_ci NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1785429997132287975', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePosts (20200727081556)
+  [1m[35m (30.7ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200727081556')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-07-29 06:52:43.663063', '2020-07-29 06:52:43.663063')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1785429997132287975')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+Started GET "/posts" for ::1 at 2020-07-29 17:54:37 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 221)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 911ms (Views: 899.2ms | ActiveRecord: 1.7ms | Allocations: 1398118)
+
+
+Started GET "/posts" for ::1 at 2020-07-29 17:55:34 +0900
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 4816)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms | Allocations: 6612)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Post:0x00007fe8e3fc74d8>
+Did you mean?  conrent
+               conrent?
+               conrent=):
+    1: <h1>トップページ</h1>
+    2: <%= @post.content %>
+  
+app/views/posts/index.html.erb:2
+Started GET "/posts" for ::1 at 2020-07-29 17:55:35 +0900
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2245)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 3326)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Post:0x00007fe8db44e348>
+Did you mean?  conrent
+               conrent?
+               conrent=):
+    1: <h1>トップページ</h1>
+    2: <%= @post.content %>
+  
+app/views/posts/index.html.erb:2
+Started GET "/posts" for ::1 at 2020-07-29 17:57:07 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 11[0m
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 6415)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.8ms | Allocations: 7423)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Post::ActiveRecord_Relation:0x00007fe8e3d9f818>
+Did you mean?  connection):
+    1: <h1>トップページ</h1>
+    2: <%= @post.content %>
+  
+app/views/posts/index.html.erb:2
+Started GET "/posts" for ::1 at 2020-07-29 17:58:04 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 11[0m
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 6473)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.8ms | Allocations: 8010)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Post::ActiveRecord_Relation:0x00007fe8dab82188>
+Did you mean?  connection):
+    1: <h1>トップページ</h1>
+    2: <%= @posts.content %>
+    3: <%= @posts.created_at %>
+  
+app/views/posts/index.html.erb:2
+Started GET "/posts" for ::1 at 2020-07-29 17:59:45 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3090)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 4285)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Post:0x00007fe8e3d1e920>
+Did you mean?  conrent
+               conrent?
+               conrent=):
+    1: <h1>トップページ</h1>
+    2: <% @posts.each do |post| %>
+    3:   <%= post.content %>
+    4:   <%= post.created_at %>
+    5: <% end %>
+  
+app/views/posts/index.html.erb:3
+app/views/posts/index.html.erb:2
+Started GET "/posts/new" for ::1 at 2020-07-29 18:14:56 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (No route matches [GET] "/posts/new"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts/new" for ::1 at 2020-07-29 18:16:25 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/posts/new"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'

@@ -281,3 +281,159 @@ Entrypoint application = js/application-3abf70f2299cb17f2534.js js/application-3
 Completed 200 OK in 3538ms (Views: 3527.0ms | ActiveRecord: 5.7ms | Allocations: 1397637)
 
 
+Started GET "/" for ::1 at 2020-08-27 00:35:55 +0900
+  [1m[35m (10.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 24ms (ActiveRecord: 0.0ms | Allocations: 265)
+
+
+Started GET "/" for ::1 at 2020-08-27 00:35:56 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/" for ::1 at 2020-08-27 00:35:58 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/" for ::1 at 2020-08-27 00:36:22 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/" for ::1 at 2020-08-27 00:36:27 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 172)
+
+
+Started GET "/" for ::1 at 2020-08-27 00:36:29 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/" for ::1 at 2020-08-27 00:54:11 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 263)
+
+
+Started GET "/" for ::1 at 2020-08-27 00:54:32 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2223)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nakaoshinnosuke/projects/ajax_app/public/packs
+[Webpacker] Hash: fdbf6dd75a2c2cf06ee7
+Version: webpack 4.44.0
+Time: 952ms
+Built at: 2020/08/27 0:54:35
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-af8d4b3dedae3d9db2c4.js    127 KiB  application  [emitted] [immutable]  application
+js/application-af8d4b3dedae3d9db2c4.js.map    142 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-af8d4b3dedae3d9db2c4.js js/application-af8d4b3dedae3d9db2c4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/checked.js] 1.86 KiB {application} [built]
+[./app/javascript/memo.js] 1.07 KiB {application} [built]
+[./app/javascript/packs/application.js] 171 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3410ms (Views: 3384.2ms | ActiveRecord: 11.1ms | Allocations: 1406627)
+
+
+Started GET "/" for ::1 at 2020-08-27 12:02:26 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1932)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 973ms (Views: 964.6ms | ActiveRecord: 1.8ms | Allocations: 1396562)
+
+
+Started POST "/posts" for ::1 at 2020-08-27 12:02:33 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"upX94ERYpN0a70rRT6B30q8jMgmsVqARcYuV7BnYxC8Xp/BTwJlMN9ntNN8lfPh8vLz2YQiRozCx0SKnUOSzLA==", "content"=>"私はバシャールです。"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `checked`, `created_at`, `updated_at`) VALUES ('私はバシャールです。', FALSE, '2020-08-27 03:02:33.937665', '2020-08-27 03:02:33.937665')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 2.5ms | Allocations: 6231)
+
+
+Started GET "/" for ::1 at 2020-08-27 12:21:08 +0900
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 263)
+
+
+Started GET "/" for ::1 at 2020-08-27 12:22:03 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 172)
+
+
+Started GET "/" for ::1 at 2020-08-27 12:22:17 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 168)
+
+
+Started GET "/" for ::1 at 2020-08-27 12:28:26 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 263)
+
+
+Started GET "/" for ::1 at 2020-08-27 12:28:34 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 172)
+
+
+Started GET "/" for ::1 at 2020-08-27 12:28:39 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/" for ::1 at 2020-08-27 12:30:30 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 263)
+
+
+Started GET "/" for ::1 at 2020-08-27 12:30:40 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 5224)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1261ms (Views: 1248.9ms | ActiveRecord: 5.8ms | Allocations: 1399674)
+
+
